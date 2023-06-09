@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantica</title>
+
+    <style>
+      * {
+        font-size: large;
+      }
+      .nav-bar {
+        display: flex;
+      }
+
+      .nav-item {
+        margin: 0 5px 15px 0;
+      }
+
+      .main-div {
+        margin-bottom: 20px;
+        margin-top: 15px;
+      }
+      .separator {
+        height: 150vh;
+      }
+      ul {
+        display: none;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="menu">
+      <nav class="nav-bar">
+        <ul>
+          <li class="nav-item">
+            <a href="#inicio"> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a href="#inicio"> Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://google.com"> Google</a>
+          </li>
+          <li class="nav-item">
+            <a href="#middle"> Medio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer"> Final</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="area">
+      <h3 calss="title">Contáctanos</h3>
+      <section class="main-div">
+        <span> Comunícate con <em>nosotros</em></span>
+      </section>
+      <button>Contactar</button>
+      <div class="separator">separador</div>
+
+      <div id="middle">Medio</div>
+
+      <div class="separator"></div>
+
+      <footer id="footer">Pie de pagina</footer>
+    </main>
+  </body>
+</html>

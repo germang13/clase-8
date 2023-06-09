@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>unidades css</title>
+    <style>
+      .cuadrado-grande {
+        position: relative;
+        margin-top: 50px;
+        width: 200vw;
+        height: 500vh;
+        background-color: #0000ff50;
+      }
+      .cuadrado {
+        /* position: relative; */
+        width: 10rem;
+        height: 50vh;
+        margin-top: 50px;
+        margin-right: 60px;
+        margin-bottom: 200px;
+        margin-left: 80px;
+        /* margin: 0 10px 20px 30px; */
+        padding-top: 50px;
+        padding-right: 60px;
+        padding-bottom: 200px;
+        padding-left: 80px;
+        border: 10px solid black;
+        /* background: url(./neon-tropical-monstera-leaf-banner_53876-138943.avif); */
+      }
+
+      .cuadrado-contenido {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        border: 2px solid red;
+      }
+
+      .fixed {
+        border: 2px solid aqua;
+        right: 40px;
+        position: fixed;
+        bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cuadrado-grande">
+      <div class="cuadrado">
+        <div class="cuadrado-contenido"></div>
+        <div class="cuadrado-contenido fixed"></div>
+        <div class="cuadrado-contenido"></div>
+      </div>
+    </div>
+  </body>
+</html>

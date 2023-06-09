@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      div {
+        margin: 5px;
+      }
+
+      .container {
+        height: 200vh;
+        border: 1px solid #ccc;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 500px;
+        width: 200px;
+        height: 100px;
+        background-color: #f1f1f1;
+        border: 1px solid #999;
+      }
+
+      .fixed-box {
+        position: fixed;
+        width: 200px;
+        height: 100px;
+        background-color: #f1f1f1;
+        border: 1px solid #999;
+      }
+
+      .sticky-box {
+        position: sticky;
+        top: 0;
+        width: 200px;
+        height: 100px;
+        background-color: #f1f1f1;
+        border: 1px solid #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="">Position Property Demo</h1>
+
+    <div class="container">
+      <div class="sticky-box">Sticky</div>
+      <div class="absolute-box">Absolute</div>
+      <div class="fixed-box">Fixed</div>
+    </div>
+  </body>
+</html>

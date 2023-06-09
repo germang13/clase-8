@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+
+    <style>
+      .grid-container {
+        display: grid;
+        width: 1000px;
+        /* sumo FRs y uso el espacion x/suma FRs */
+        grid-template-columns: 10fr 20fr 10fr;
+        grid-template-rows: 150px 150px 150px;
+        gap: 10px;
+
+        grid-template-areas:
+          "header header header"
+          "nav main main"
+          "nav footer footer";
+
+        background-color: #f1f1f1;
+      }
+
+      .header {
+        grid-area: header;
+      }
+
+      .nav {
+        grid-area: nav;
+      }
+
+      .main {
+        grid-area: main;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+
+      .grid-item {
+        background-color: blue;
+        text-align: center;
+        font-size: 30px;
+        /* border: 2px solid black;  */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item footer">Footer</div>
+      <div class="grid-item nav">Nav bar</div>
+      <div class="grid-item header">Header</div>
+      <div class="grid-item main">Main</div>
+      <!-- <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div> -->
+    </div>
+  </body>
+</html>
