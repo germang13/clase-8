@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .mi-clase {
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        margin: 10px;
+      }
+
+      .mini-cuadrado {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="mi-clase"></div>
+      <div class="mi-clase"></div>
+      <div class="mi-clase"></div>
+      <div class="mi-clase"></div>
+    </div>
+
+    <script>
+      // document.getElementById("container").onclick = function () {
+      //   document.getElementById("container").style.display = "flex";
+      // };
+
+      const listaElementos = document.getElementsByClassName("mi-clase");
+
+      // esta funcion pone a TODOS los elementos de la lista (listaElementos) en rojo
+      function pasarARojo() {
+        for (let index = 0; index < listaElementos.length; index++) {
+          const element2 = listaElementos[index];
+          if (element2.style.backgroundColor === "red") {
+            element2.style.backgroundColor = "blue";
+          } else {
+            element2.style.backgroundColor = "red";
+          }
+        }
+      }
+
+      function cambiarTexto(numero) {
+        console.log("se ejecuta la funcion del EL");
+        document.getElementById(
+          "h1-titulo"
+        ).innerText = `se clickeo el elemento ${numero}`;
+      }
+
+      //en este asigno la funcion a ejecutar cuando se de el evento "click"
+      for (let index = 0; index < listaElementos.length; index++) {
+        const element = listaElementos[index];
+        console.log("se agrega event listener");
+
+        // element.onclick = pasarARojo;
+        element.addEventListener("click", function () {
+          const miniCuadrado = document.createElement("div");
+          miniCuadrado.classList.add("mini-cuadrado");
+
+          element.appendChild(miniCuadrado);
+        });
+      }
+    </script>
+  </body>
+</html>
